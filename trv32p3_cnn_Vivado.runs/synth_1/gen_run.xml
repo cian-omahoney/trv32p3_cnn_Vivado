@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1707332686" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/trv32p3_cnn.dcp">
-  <File Type="VDS-TIMING-PB" Name="topLevel_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="topLevel_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="topLevel.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="topLevel_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="topLevel_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="topLevel_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="topLevel.vds"/>
   <File Type="REPORTS-TCL" Name="topLevel_reports.tcl"/>
   <File Type="PA-TCL" Name="topLevel.tcl"/>
+  <File Type="RDS-DCP" Name="topLevel.dcp"/>
+  <File Type="RDS-UTIL" Name="topLevel_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="topLevel_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/trv32p3_cnn/prim/primitives.v">
