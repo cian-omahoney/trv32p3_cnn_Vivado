@@ -1,0 +1,15 @@
+set_property SRC_FILE_INFO {cfile:/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/constrs_1/imports/digilent-xdc-master/Arty-A7-35-Master.xdc rfile:../../../trv32p3_cnn_Vivado.srcs/constrs_1/imports/digilent-xdc-master/Arty-A7-35-Master.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { CLK100MHZ }]; #IO_L12P_T1_MRCC_35 Sch=gclk[100]
+set_property src_info {type:XDC file:1 line:19 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN E1    IOSTANDARD LVCMOS33 } [get_ports { led0_b }]; #IO_L18N_T2_35 Sch=led0_b
+set_property src_info {type:XDC file:1 line:89 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN V15   IOSTANDARD LVCMOS33 } [get_ports { TCK  }]; #IO_L16P_T2_CSI_B_14          Sch=ck_io[0]
+set_property src_info {type:XDC file:1 line:90 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN U16   IOSTANDARD LVCMOS33 } [get_ports { TDO  }]; #IO_L18P_T2_A12_D28_14        Sch=ck_io[1]
+set_property src_info {type:XDC file:1 line:91 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN P14   IOSTANDARD LVCMOS33 } [get_ports { TDI  }]; #IO_L8N_T1_D12_14             Sch=ck_io[2]
+set_property src_info {type:XDC file:1 line:92 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN T11   IOSTANDARD LVCMOS33 } [get_ports { TMS  }]; #IO_L19P_T3_A10_D26_14        Sch=ck_io[3]
+set_property src_info {type:XDC file:1 line:180 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN C2    IOSTANDARD LVCMOS33 } [get_ports { RST_LOW }]; #IO_L16P_T2_35 Sch=ck_rst

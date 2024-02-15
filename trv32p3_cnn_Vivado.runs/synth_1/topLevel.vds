@@ -1,0 +1,543 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Feb  7 19:04:49 2024
+# Process ID: 34670
+# Current directory: /home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.runs/synth_1
+# Command line: vivado -log topLevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source topLevel.tcl
+# Log file: /home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.runs/synth_1/topLevel.vds
+# Journal file: /home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.runs/synth_1/vivado.jou
+# Running On: elec-OptiPlex-7020, OS: Linux, CPU Frequency: 3655.097 MHz, CPU Physical cores: 4, Host memory: 16662 MB
+#-----------------------------------------------------------
+source topLevel.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1317.281 ; gain = 0.023 ; free physical = 3657 ; free virtual = 34567
+Command: read_checkpoint -auto_incremental -incremental /home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/utils_1/imports/synth_1/trv32p3_cnn.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/utils_1/imports/synth_1/trv32p3_cnn.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top topLevel -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34709
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2046.066 ; gain = 404.715 ; free physical = 2678 ; free virtual = 33600
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'jtag_si', assumed default net type 'wire' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/new/jtag_peripheral.v:52]
+INFO: [Synth 8-6157] synthesizing module 'topLevel' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/new/topLevel.v:23]
+INFO: [Synth 8-6157] synthesizing module 'trv32p3_cnn' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/trv32p3_cnn.v:10]
+INFO: [Synth 8-6157] synthesizing module 'alu' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/alu.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/alu.v:11]
+INFO: [Synth 8-6157] synthesizing module 'pca' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/pca.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'pca' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/pca.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cmp' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/cmp.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'cmp' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/cmp.v:11]
+INFO: [Synth 8-6157] synthesizing module 'div' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/div.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'div' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/div.v:17]
+INFO: [Synth 8-6157] synthesizing module 'lx' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/lx.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'lx' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/lx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'agu' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/agu.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'agu' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/agu.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mpy' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/mpy.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mpy' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/mpy.v:11]
+INFO: [Synth 8-6157] synthesizing module 'ocd_addr_incr' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/ocd_addr_incr.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ocd_addr_incr' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/ocd_addr_incr.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cnn' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/cnn.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'cnn' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/prim/cnn.v:11]
+INFO: [Synth 8-6157] synthesizing module 'dm_merge' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mem/dm_merge.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'dm_merge' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mem/dm_merge.v:17]
+INFO: [Synth 8-6157] synthesizing module 'dm_wbb' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mem/dm_wbb.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'dm_wbb' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mem/dm_wbb.v:17]
+INFO: [Synth 8-6157] synthesizing module 'controller' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/controller/controller.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/controller/controller.v:11]
+INFO: [Synth 8-6157] synthesizing module 'reg_PC' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/reg/reg_PC.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'reg_PC' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/reg/reg_PC.v:11]
+INFO: [Synth 8-6157] synthesizing module 'reg_PC_ID' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/reg/reg_PC_ID.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'reg_PC_ID' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/reg/reg_PC_ID.v:11]
+INFO: [Synth 8-6157] synthesizing module 'reg_PC_EX' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/reg/reg_PC_EX.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'reg_PC_EX' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/reg/reg_PC_EX.v:11]
+INFO: [Synth 8-6157] synthesizing module 'reg_X' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/reg/reg_X.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'reg_X' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/reg/reg_X.v:11]
+INFO: [Synth 8-6157] synthesizing module 'reg_ocd_addr' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/reg/reg_ocd_addr.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'reg_ocd_addr' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/reg/reg_ocd_addr.v:11]
+INFO: [Synth 8-6157] synthesizing module 'reg_ocd_data' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/reg/reg_ocd_data.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'reg_ocd_data' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/reg/reg_ocd_data.v:11]
+INFO: [Synth 8-6157] synthesizing module 'reg_ocd_instr' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/reg/reg_ocd_instr.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'reg_ocd_instr' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/reg/reg_ocd_instr.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mem_PMb' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mem/mem_PMb.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mem_PMb' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mem/mem_PMb.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mem_DMb' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mem/mem_DMb.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mem_DMb' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mem/mem_DMb.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_pm_addr' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_pm_addr.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_pm_addr' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_pm_addr.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_pm_wr' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_pm_wr.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_pm_wr' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_pm_wr.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_dm_addr' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_dm_addr.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_dm_addr' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_dm_addr.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_dmb_wr' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_dmb_wr.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_dmb_wr' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_dmb_wr.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_x_w1' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_x_w1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_x_w1' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_x_w1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_x_w1_dead' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_x_w1_dead.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_x_w1_dead' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_x_w1_dead.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_ocd_data_w' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_ocd_data_w.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_ocd_data_w' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_ocd_data_w.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_ocd_instr_w' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_ocd_instr_w.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_ocd_instr_w' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_ocd_instr_w.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_aluA' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_aluA.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_aluA' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_aluA.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_aluB' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_aluB.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_aluB' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_aluB.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_pcaA' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_pcaA.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_pcaA' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_pcaA.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_pcaB' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_pcaB.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_pcaB' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_pcaB.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_jmp_tgt_ID' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_jmp_tgt_ID.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_jmp_tgt_ID' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_jmp_tgt_ID.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_aguB' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_aguB.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_aguB' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_aguB.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_mpyM' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_mpyM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_mpyM' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_mpyM.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux_ocd_swbreak' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_ocd_swbreak.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux_ocd_swbreak' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux_ocd_swbreak.v:11]
+INFO: [Synth 8-6157] synthesizing module 'pipe___pidTGT' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___pidTGT.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'pipe___pidTGT' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___pidTGT.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux___pidTGT_w' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux___pidTGT_w.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux___pidTGT_w' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux___pidTGT_w.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mux___X_x_w1_wad' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux___X_x_w1_wad.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux___X_x_w1_wad' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/mux/mux___X_x_w1_wad.v:11]
+INFO: [Synth 8-6157] synthesizing module 'pipe___ocd_ld_DMbEX' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___ocd_ld_DMbEX.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'pipe___ocd_ld_DMbEX' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___ocd_ld_DMbEX.v:11]
+INFO: [Synth 8-6157] synthesizing module 'pipe___ocd_ld_DMbS3' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___ocd_ld_DMbS3.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'pipe___ocd_ld_DMbS3' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___ocd_ld_DMbS3.v:11]
+INFO: [Synth 8-6157] synthesizing module 'pipe___ocd_st_DMbEX' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___ocd_st_DMbEX.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'pipe___ocd_st_DMbEX' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___ocd_st_DMbEX.v:11]
+INFO: [Synth 8-6157] synthesizing module 'pipe___ocd_st_DMbS3' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___ocd_st_DMbS3.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'pipe___ocd_st_DMbS3' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___ocd_st_DMbS3.v:11]
+INFO: [Synth 8-6157] synthesizing module 'pipe___ocd_ld_PMbEX' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___ocd_ld_PMbEX.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'pipe___ocd_ld_PMbEX' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___ocd_ld_PMbEX.v:11]
+INFO: [Synth 8-6157] synthesizing module 'pipe___ocd_ld_PMbS3' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___ocd_ld_PMbS3.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'pipe___ocd_ld_PMbS3' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___ocd_ld_PMbS3.v:11]
+INFO: [Synth 8-6157] synthesizing module 'pipe___ocd_st_PMbEX' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___ocd_st_PMbEX.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'pipe___ocd_st_PMbEX' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/pipe/pipe___ocd_st_PMbEX.v:11]
+INFO: [Synth 8-6157] synthesizing module 'hazards' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/controller/hazards.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'hazards' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/controller/hazards.v:11]
+INFO: [Synth 8-6157] synthesizing module 'debug_controller' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/controller/debug_controller.v:11]
+	Parameter nid bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/controller/debug_controller.v:224]
+INFO: [Synth 8-6155] done synthesizing module 'debug_controller' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/controller/debug_controller.v:11]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/controller/decoder.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/controller/decoder.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'trv32p3_cnn' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/trv32p3_cnn.v:10]
+INFO: [Synth 8-6157] synthesizing module 'jtag_peripheral' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/new/jtag_peripheral.v:4]
+INFO: [Synth 8-6157] synthesizing module 'jtag_tap_controller' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/test_bench/jtag_tap_controller.v:10]
+INFO: [Synth 8-226] default block is never used [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/test_bench/jtag_tap_controller.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'jtag_tap_controller' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/test_bench/jtag_tap_controller.v:10]
+INFO: [Synth 8-6157] synthesizing module 'jtag_interface' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/test_bench/jtag_interface.v:11]
+INFO: [Synth 8-6157] synthesizing module 'jtag_scan_register' [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/test_bench/jtag_scan_register.v:11]
+	Parameter scan_reg_width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'jtag_scan_register' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/test_bench/jtag_scan_register.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'jtag_interface' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/test_bench/jtag_interface.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'jtag_peripheral' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/new/jtag_peripheral.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'topLevel' (0#1) [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/new/topLevel.v:23]
+WARNING: [Synth 8-6014] Unused sequential element r_booting_reg was removed.  [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/imports/trv32p3_cnn/controller/controller.v:333]
+WARNING: [Synth 8-3848] Net jtag_si in module/entity jtag_peripheral does not have driver. [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/new/jtag_peripheral.v:52]
+WARNING: [Synth 8-3848] Net dbg_ext_break in module/entity topLevel does not have driver. [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/sources_1/new/topLevel.v:60]
+WARNING: [Synth 8-7129] Port dbg_instr_in[15] in module jtag_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dbg_instr_in[14] in module jtag_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dbg_instr_in[13] in module jtag_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dbg_instr_in[12] in module jtag_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dbg_instr_in[11] in module jtag_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dbg_instr_in[10] in module jtag_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dbg_instr_in[9] in module jtag_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dbg_instr_in[8] in module jtag_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dbg_instr_in[7] in module jtag_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dbg_instr_in[6] in module jtag_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dbg_instr_in[5] in module jtag_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dbg_instr_in[4] in module jtag_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dbg_instr_in[3] in module jtag_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dbg_instr_in[2] in module jtag_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[31] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[30] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[29] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[28] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[27] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[26] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[25] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[24] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[23] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[22] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[21] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[20] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[19] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[18] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[17] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[16] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[15] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[14] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[13] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[12] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[11] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[10] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[9] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_r2_in[8] in module mux_dmb_wr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCK in module topLevel is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2149.004 ; gain = 507.652 ; free physical = 2552 ; free virtual = 33474
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2166.816 ; gain = 525.465 ; free physical = 2551 ; free virtual = 33471
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2166.816 ; gain = 525.465 ; free physical = 2551 ; free virtual = 33471
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2166.816 ; gain = 0.000 ; free physical = 2551 ; free virtual = 33471
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/constrs_1/imports/digilent-xdc-master/Arty-A7-35-Master.xdc]
+Finished Parsing XDC File [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/constrs_1/imports/digilent-xdc-master/Arty-A7-35-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.srcs/constrs_1/imports/digilent-xdc-master/Arty-A7-35-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/topLevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/topLevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2280.551 ; gain = 0.000 ; free physical = 2538 ; free virtual = 33450
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2280.586 ; gain = 0.000 ; free physical = 2538 ; free virtual = 33450
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2529 ; free virtual = 33441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2529 ; free virtual = 33441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2529 ; free virtual = 33441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'controller'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'jtag_tap_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                              000 |                             0000
+                 iSTATE0 |                              100 |                             1111
+                 iSTATE1 |                              011 |                             1110
+                  iSTATE |                              001 |                             1100
+                 iSTATE3 |                              010 |                             1000
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'sequential' in module 'controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+  TEST_LOGIC_RESET_STATE |                 0001000000000000 |                             0000
+     RUN_TEST_IDLE_STATE |                 0000100000000000 |                             0001
+    SELECT_DR_SCAN_STATE |                 0000000000100000 |                             0010
+    SELECT_IR_SCAN_STATE |                 0000000001000000 |                             1001
+        CAPTURE_IR_STATE |                 0000010000000000 |                             1010
+          SHIFT_IR_STATE |                 0000001000000000 |                             1011
+          EXIT1_IR_STATE |                 0000000010000000 |                             1100
+          PAUSE_IR_STATE |                 0000000000001000 |                             1101
+          EXIT2_IR_STATE |                 0000000000010000 |                             1110
+         UPDATE_IR_STATE |                 0000000100000000 |                             1111
+        CAPTURE_DR_STATE |                 0000000000000001 |                             0011
+          SHIFT_DR_STATE |                 0000000000000100 |                             0100
+          EXIT1_DR_STATE |                 0000000000000010 |                             0101
+          PAUSE_DR_STATE |                 1000000000000000 |                             0110
+          EXIT2_DR_STATE |                 0010000000000000 |                             0111
+         UPDATE_DR_STATE |                 0100000000000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'jtag_tap_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2527 ; free virtual = 33440
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 2     
+	   3 Input   33 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 9     
+	   2 Input    6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               35 Bit    Registers := 1     
+	               32 Bit    Registers := 49    
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 3     
+	  11 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 76    
+	   3 Input   32 Bit        Muxes := 34    
+	   5 Input   32 Bit        Muxes := 1     
+	   7 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 5     
+	   3 Input   22 Bit        Muxes := 1     
+	   7 Input   16 Bit        Muxes := 2     
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 17    
+	  16 Input   16 Bit        Muxes := 1     
+	   3 Input   13 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 13    
+	   7 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 17    
+	   2 Input    4 Bit        Muxes := 9     
+	  15 Input    4 Bit        Muxes := 2     
+	  14 Input    4 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 11    
+	   6 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 17    
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 164   
+	   6 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 34    
+	   5 Input    1 Bit        Muxes := 7     
+	   7 Input    1 Bit        Muxes := 6     
+	  10 Input    1 Bit        Muxes := 11    
+	  14 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP p_mpy.ph_out0, operation Mode is: A*B.
+DSP Report: operator p_mpy.ph_out0 is absorbed into DSP p_mpy.ph_out0.
+DSP Report: operator p_mpy.ph_out0 is absorbed into DSP p_mpy.ph_out0.
+DSP Report: Generating DSP p_mpy.ph_out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_mpy.ph_out0 is absorbed into DSP p_mpy.ph_out0.
+DSP Report: operator p_mpy.ph_out0 is absorbed into DSP p_mpy.ph_out0.
+DSP Report: Generating DSP p_mpy.ph_out0, operation Mode is: A*B.
+DSP Report: operator p_mpy.ph_out0 is absorbed into DSP p_mpy.ph_out0.
+DSP Report: operator p_mpy.ph_out0 is absorbed into DSP p_mpy.ph_out0.
+DSP Report: Generating DSP p_mpy.ph_out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_mpy.ph_out0 is absorbed into DSP p_mpy.ph_out0.
+DSP Report: operator p_mpy.ph_out0 is absorbed into DSP p_mpy.ph_out0.
+DSP Report: Generating DSP p_cnn.saturatedResult2, operation Mode is: A*B.
+DSP Report: operator p_cnn.saturatedResult2 is absorbed into DSP p_cnn.saturatedResult2.
+DSP Report: operator p_cnn.saturatedResult2 is absorbed into DSP p_cnn.saturatedResult2.
+DSP Report: Generating DSP p_cnn.saturatedResult2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_cnn.saturatedResult2 is absorbed into DSP p_cnn.saturatedResult2.
+DSP Report: operator p_cnn.saturatedResult2 is absorbed into DSP p_cnn.saturatedResult2.
+DSP Report: Generating DSP p_cnn.saturatedResult2, operation Mode is: A*B.
+DSP Report: operator p_cnn.saturatedResult2 is absorbed into DSP p_cnn.saturatedResult2.
+DSP Report: operator p_cnn.saturatedResult2 is absorbed into DSP p_cnn.saturatedResult2.
+DSP Report: Generating DSP p_cnn.saturatedResult2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_cnn.saturatedResult2 is absorbed into DSP p_cnn.saturatedResult2.
+DSP Report: operator p_cnn.saturatedResult2 is absorbed into DSP p_cnn.saturatedResult2.
+WARNING: [Synth 8-7129] Port TCK in module topLevel is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_r_state_reg[2]) is unused and will be removed from module controller.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_r_state_reg[1]) is unused and will be removed from module controller.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_r_state_reg[0]) is unused and will be removed from module controller.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[15]) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[14]) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[13]) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[12]) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[11]) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[10]) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[9]) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[8]) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[7]) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[6]) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[5]) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[4]) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[3]) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[2]) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[1]) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (inst_jtag_peripheral/inst_jtag_tap_controller/FSM_onehot_state_reg[0]) is unused and will be removed from module topLevel.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2508 ; free virtual = 33429
+---------------------------------------------------------------------------------
+ Sort Area is  p_mpy.ph_out0_0 : 0 0 : 2701 5008 : Used 1 time 0
+ Sort Area is  p_mpy.ph_out0_0 : 0 1 : 2307 5008 : Used 1 time 0
+ Sort Area is  p_cnn.saturatedResult2_6 : 0 0 : 2701 4861 : Used 1 time 0
+ Sort Area is  p_cnn.saturatedResult2_6 : 0 1 : 2160 4861 : Used 1 time 0
+ Sort Area is  p_mpy.ph_out0_3 : 0 0 : 2304 4330 : Used 1 time 0
+ Sort Area is  p_mpy.ph_out0_3 : 0 1 : 2026 4330 : Used 1 time 0
+ Sort Area is  p_cnn.saturatedResult2_8 : 0 0 : 2158 3958 : Used 1 time 0
+ Sort Area is  p_cnn.saturatedResult2_8 : 0 1 : 1800 3958 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mpy         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mpy         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mpy         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mpy         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cnn         | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cnn         | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cnn         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cnn         | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2504 ; free virtual = 33425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2504 ; free virtual = 33425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2504 ; free virtual = 33425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2504 ; free virtual = 33425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2504 ; free virtual = 33425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2504 ; free virtual = 33425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2504 ; free virtual = 33425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2504 ; free virtual = 33425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2504 ; free virtual = 33425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     3|
+|4     |FDRE   |    25|
+|5     |IBUF   |     2|
+|6     |OBUF   |     1|
+|7     |OBUFT  |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2504 ; free virtual = 33425
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:00:45 . Memory (MB): peak = 2280.586 ; gain = 525.465 ; free physical = 2503 ; free virtual = 33424
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2280.586 ; gain = 639.234 ; free physical = 2503 ; free virtual = 33424
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2280.586 ; gain = 0.000 ; free physical = 2503 ; free virtual = 33424
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2280.586 ; gain = 0.000 ; free physical = 2789 ; free virtual = 33710
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 4ca350a3
+INFO: [Common 17-83] Releasing license: Synthesis
+140 Infos, 63 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:50 . Memory (MB): peak = 2280.586 ; gain = 963.305 ; free physical = 2789 ; free virtual = 33710
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1851.365; main = 1532.081; forked = 371.569
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3269.754; main = 2280.555; forked = 989.199
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2280.586 ; gain = 0.000 ; free physical = 2789 ; free virtual = 33710
+INFO: [Common 17-1381] The checkpoint '/home/elec/Thesis/trv32p3_cnn_Vivado/trv32p3_cnn_Vivado.runs/synth_1/topLevel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file topLevel_utilization_synth.rpt -pb topLevel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  7 19:05:51 2024...
